@@ -28,4 +28,5 @@
   "I don't do a whole lot ... yet."
   []
   (let [state (gameStep initialState)]
-    (println state)))
+    (println state)
+    (if (> (get-in state [:firstPlayer :score]) (get-in state [:secondPlayer :score])) (println "player 1 won") (println "player 2 won"))))
