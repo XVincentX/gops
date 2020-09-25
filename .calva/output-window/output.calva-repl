@@ -1,0 +1,538 @@
+(gameStep initialState)
+; Execution error (UnsupportedOperationException) at gops.core/gameStep (core.clj:15).
+; nth not supported on this type: PersistentHashSet
+[{:file "RT.java" :line 932 :method "nthFrom" :flags [:java]}
+ {:file "RT.java" :line 897 :method "nth" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:7238" :fn "rand-nth"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:7231" :fn "rand-nth"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:15" :fn "gameStep"  :method "invokeStatic" :flags [:project :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:1" :fn "eval15983"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:1" :fn "eval15983"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/random-card-strategy
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+#'gops.core/-main
+clj::gops.core=>
+(gameStep initialState)
+
+#'gops.core/gameStep
+clj::gops.core=>
+(gameStep initialState)
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:21).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:21" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:42" :fn "eval17911"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:42" :fn "eval17911"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+(initialState)
+; Execution error (ArityException) at gops.core/eval17913 (form-init11026467416576336527.clj:71).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+[{:file "AFn.java" :line 429 :method "throwArity" :flags [:java]}
+ {:file "AFn.java" :line 28 :method "invoke" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:71" :fn "eval17913"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:71" :fn "eval17913"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/initialState
+clj::gops.core=>
+(gameStep initialState)
+#{7 1 4 6 3 2 11 9 5 10 8}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:22).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:22" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:100" :fn "eval19421"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:100" :fn "eval19421"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+9
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:22).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:22" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:133" :fn "eval20574"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:133" :fn "eval20574"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+; Syntax error compiling at (src/gops/core.clj:21:37).
+; Unable to resolve symbol: currentState in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck 6, :firstPlayer {:deck nil}, :secondPlayer {:deck #function[clojure.core/disj], nil nil}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:199" :fn "eval21628"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:199" :fn "eval21628"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck #{7 1 4 3 2 11 9 5 10 8}, :firstPlayer {:deck nil}, :secondPlayer {:deck #function[clojure.core/disj], nil nil}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:234" :fn "eval21788"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:234" :fn "eval21788"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck #{7 1 6 3 2 11 9 5 10 8}, :firstPlayer {:deck nil}, :secondPlayer {:deck nil}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:269" :fn "eval21937"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:269" :fn "eval21937"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+nil
+nil
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 259 :method "gt" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:303" :fn "eval23908"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:303" :fn "eval23908"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/initialState
+clj::gops.core=>
+(gameStep initialState)
+#{7 1 4 6 3 2 11 9 5 10 8}
+2
+#{7 1 4 6 3 11 9 5 10 8}
+9
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:24).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 137 :method "inc" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:24" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:25" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:336" :fn "eval24391"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:336" :fn "eval24391"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+
+{:bountyDeck #{7 1 4 6 3 11 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 3 2 11 9 10 8}}, :secondPlayer {:deck #{7 1 4 6 2 11 9 5 10 8}}}
+{:bountyDeck #{7 1 4 3 11 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 2 11 9 10 8}}, :secondPlayer {:deck #{7 1 4 6 2 11 9 5 10}}}
+{:bountyDeck #{7 1 4 11 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 2 11 9 10}}, :secondPlayer {:deck #{1 4 6 2 11 9 5 10}}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 137 :method "inc" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:24" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:374" :fn "eval24874"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:374" :fn "eval24874"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:bountyDeck #{7 1 4 6 3 2 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 3 11 9 5 10 8}}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 8}, :score 1}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:24).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 137 :method "inc" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:24" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:24" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:414" :fn "eval25309"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:414" :fn "eval25309"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck #{7 1 4 6 2 11 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 8}, :score 1}, :secondPlayer {:deck #{7 1 4 6 3 2 11 5 10 8}}}
+{:bountyDeck #{7 1 4 6 2 11 9 10 8}, :firstPlayer {:deck #{7 1 6 3 2 11 9 5 8}}, :secondPlayer {:deck #{7 1 4 6 3 2 5 10 8}, :score 2}}
+; Execution error (NullPointerException) at gops.core/gameStep (form-init11026467416576336527.clj:23).
+; null
+[{:file "Numbers.java" :line 1068 :method "ops" :flags [:java]}
+ {:file "Numbers.java" :line 137 :method "inc" :flags [:java]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:24" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:23" :fn "gameStep"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:10" :fn "gameStep"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:447" :fn "eval25311"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/vncz/dev/gops/src/gops/core.clj:447" :fn "eval25311"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:91" :fn "evaluate/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+; Syntax error reading source at (REPL:20:163).
+; Unmatched delimiter: }
+[{:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:433" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:432" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:84" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:56" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/interruptible_eval.clj:155" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:190" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/vncz/.m2/repository/nrepl/nrepl/0.7.0/nrepl-0.7.0.jar!/nrepl/middleware/session.clj:189" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck #{7 1 4 6 3 2 11 9 10 8}, :firstPlayer {:deck #{1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 8}, :score 1}}
+{:bountyDeck #{7 1 4 6 3 11 9 10 8}, :firstPlayer {:deck #{1 4 6 3 2 11 9 5 10}, :score 1}, :secondPlayer {:deck #{7 1 4 6 2 11 9 5 8}, :score 0}}
+{:bountyDeck #{7 1 6 3 11 9 10 8}, :firstPlayer {:deck #{1 4 6 3 11 9 5 10}, :score 1}, :secondPlayer {:deck #{7 1 4 6 11 9 5 8}, :score 2}}
+{:bountyDeck #{7 1 6 3 11 9 10}, :firstPlayer {:deck #{1 4 6 3 11 9 5}, :score 2}, :secondPlayer {:deck #{7 4 6 11 9 5 8}, :score 1}}
+{:bountyDeck #{1 6 3 11 9 10}, :firstPlayer {:deck #{1 4 6 3 9 5}, :score 3}, :secondPlayer {:deck #{7 6 11 9 5 8}, :score 2}}
+{:bountyDeck #{1 3 11 9 10}, :firstPlayer {:deck #{1 4 3 9 5}, :score 4}, :secondPlayer {:deck #{7 6 11 9 8}, :score 3}}
+{:bountyDeck #{1 3 11 10}, :firstPlayer {:deck #{1 3 9 5}, :score 4}, :secondPlayer {:deck #{6 11 9 8}, :score 5}}
+{:bountyDeck #{1 3 10}, :firstPlayer {:deck #{1 9 5}, :score 4}, :secondPlayer {:deck #{6 11 8}, :score 5}}
+{:bountyDeck #{3 10}, :firstPlayer {:deck #{1 9}, :score 4}, :secondPlayer {:deck #{6 11}, :score 5}}
+{:bountyDeck #{10}, :firstPlayer {:deck #{1}, :score 5}, :secondPlayer {:deck #{11}, :score 4}}
+{:bountyDeck #{}, :firstPlayer {:deck #{}, :score 5}, :secondPlayer {:deck #{}, :score 6}}
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:firstPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 2 11 9 5 10 8}, :score 0}, :bountyDeck #{7 1 4 6 3 2 11 9 5 10 8}}
+{:bountyDeck #{7 1 4 6 3 11 9 5 10 8}, :firstPlayer {:deck #{7 1 4 6 3 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 4 6 3 11 9 5 10 8}, :score 1}}
+{:bountyDeck #{7 1 4 6 3 11 9 10 8}, :firstPlayer {:deck #{7 1 4 6 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 6 3 11 9 5 10 8}, :score 1}}
+{:bountyDeck #{1 4 6 3 11 9 10 8}, :firstPlayer {:deck #{7 4 6 11 9 5 10 8}, :score 0}, :secondPlayer {:deck #{7 1 6 3 9 5 10 8}, :score 1}}
+{:bountyDeck #{1 4 6 3 11 10 8}, :firstPlayer {:deck #{7 4 6 9 5 10 8}, :score 1}, :secondPlayer {:deck #{7 1 6 3 9 5 8}, :score 0}}
+{:bountyDeck #{1 4 6 3 11 10}, :firstPlayer {:deck #{7 4 6 9 5 10}, :score 2}, :secondPlayer {:deck #{7 1 3 9 5 8}, :score 1}}
+{:bountyDeck #{1 4 6 3 11}, :firstPlayer {:deck #{7 4 6 9 10}, :score 2}, :secondPlayer {:deck #{1 3 9 5 8}, :score 3}}
+{:bountyDeck #{4 6 3 11}, :firstPlayer {:deck #{7 6 9 10}, :score 3}, :secondPlayer {:deck #{3 9 5 8}, :score 2}}
+{:bountyDeck #{4 6 3}, :firstPlayer {:deck #{7 6 10}, :score 3}, :secondPlayer {:deck #{3 5 8}, :score 4}}
+{:bountyDeck #{4 6}, :firstPlayer {:deck #{7 10}, :score 3}, :secondPlayer {:deck #{3 5}, :score 4}}
+{:bountyDeck #{6}, :firstPlayer {:deck #{7}, :score 4}, :secondPlayer {:deck #{3}, :score 3}}
+{:bountyDeck #{}, :firstPlayer {:deck #{}, :score 5}, :secondPlayer {:deck #{}, :score 4}}
+clj::gops.core=>
+#'gops.core/gameStep
+clj::gops.core=>
+clj::gops.core=>
+(gameStep initialState)
+{:bountyDeck #{}, :firstPlayer {:deck #{}, :score 5}, :secondPlayer {:deck #{}, :score 4}}
+clj::gops.core=>
+; nREPL Connection was closed
