@@ -20,9 +20,9 @@
                                           match-winner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)
                                           new-state (-> current-state
                                                         (update-in [match-winner :score] inc)
-                                                        (update-in [:bountyDeck] #(disj % drawn-card))
-                                                        (update-in [:firstPlayer :deck] #(disj % first-player-card))
-                                                        (update-in [:secondPlayer :deck] #(disj % second-player-card)))]
+                                                        (update-in [:bountyDeck] disj drawn-card)
+                                                        (update-in [:firstPlayer :deck] disj first-player-card)
+                                                        (update-in [:secondPlayer :deck] disj second-player-card))]
                                       (game-step new-state)))))
 
 (defn -main []
