@@ -6,6 +6,7 @@
                    :bountyDeck #{1 2 3 4 5 6 7 8 9 10 11}})
 
 (defn random-card-strategy [deck] (rand-nth (seq deck)))
+(defn highest-card-strategy [deck] (apply max (seq deck)))
 
 (defn gameStep [currentState] (let [bountyDeck (:bountyDeck currentState)
                                     firstPlayerDeck (get-in currentState [:firstPlayer :deck])
@@ -16,7 +17,7 @@
                                   currentState
                                   (let [drawnCard (rand-nth (seq bountyDeck))
                                         firstPlayerCard (random-card-strategy firstPlayerDeck)
-                                        secondPlayerCard (random-card-strategy secondPlayerDeck)
+                                        secondPlayerCard (highest-card-strategy secondPlayerDeck)
                                         newState {:bountyDeck (disj bountyDeck drawnCard)
                                                   :firstPlayer {:deck (disj firstPlayerDeck firstPlayerCard) :score firstPlayerScore}
                                                   :secondPlayer {:deck (disj secondPlayerDeck secondPlayerCard) :score secondPlayerScore}}
