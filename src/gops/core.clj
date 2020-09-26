@@ -29,6 +29,6 @@
 (defn -main []
   (let [final-state (game-step initial-state)]
     (println final-state)
-    (if (> (get-in final-state [:first-player :score]) (get-in final-state [:second-player :score]))
+    (if (> (-> final-state :first-player :score) (-> final-state :second-player :score))
       (println "player 1 won")
       (println "player 2 won"))))
