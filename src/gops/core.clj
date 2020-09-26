@@ -9,20 +9,21 @@
 (defn highest-card-strategy [deck] (apply max (seq deck)))
 (def draw-card random-card-strategy)
 
-(defn game-step [current-state] (let [bountyDeck (:bountyDeck current-state)
-                                      first-player-deck (-> current-state :firstPlayer :deck)
-                                      second-player-deck (-> current-state :secondPlayer :deck)]
-                                  (if (seq bountyDeck)
-                                    (let [drawn-card (draw-card bountyDeck)
-                                          first-player-card (random-card-strategy first-player-deck)
-                                          second-player-card (highest-card-strategy second-player-deck)
-                                          match-winner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)]
-                                      (game-step (-> current-state
-                                                     (update-in [match-winner :score] inc)
-                                                     (update-in [:bountyDeck] disj drawn-card)
-                                                     (update-in [:firstPlayer :deck] disj first-player-card)
-                                                     (update-in [:secondPlayer :deck] disj second-player-card))))
-                                    current-state)))
+(defn game-step [current-state]
+  (let [bountyDeck (:bountyDeck current-state)
+        first-player-deck (-> current-state :firstPlayer :deck)
+        second-player-deck (-> current-state :secondPlayer :deck)]
+    (if (seq bountyDeck)
+      (let [drawn-card (draw-card bountyDeck)
+            first-player-card (random-card-strategy first-player-deck)
+            second-player-card (highest-card-strategy second-player-deck)
+            match-winner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)]
+        (game-step (-> current-state
+                       (update-in [match-winner :score] inc)
+                       (update-in [:bountyDeck] disj drawn-card)
+                       (update-in [:firstPlayer :deck] disj first-player-card)
+                       (update-in [:secondPlayer :deck] disj second-player-card))))
+      current-state)))
 
 (defn -main []
   (let [final-state (game-step initial-state)]
