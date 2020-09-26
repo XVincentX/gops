@@ -16,13 +16,12 @@
                                     (let [drawn-card (draw-card bountyDeck)
                                           first-player-card (random-card-strategy first-player-deck)
                                           second-player-card (highest-card-strategy second-player-deck)
-                                          match-winner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)
-                                          new-state (-> current-state
-                                                        (update-in [match-winner :score] inc)
-                                                        (update-in [:bountyDeck] disj drawn-card)
-                                                        (update-in [:firstPlayer :deck] disj first-player-card)
-                                                        (update-in [:secondPlayer :deck] disj second-player-card))]
-                                      (game-step new-state))
+                                          match-winner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)]
+                                      (game-step (-> current-state
+                                                     (update-in [match-winner :score] inc)
+                                                     (update-in [:bountyDeck] disj drawn-card)
+                                                     (update-in [:firstPlayer :deck] disj first-player-card)
+                                                     (update-in [:secondPlayer :deck] disj second-player-card))))
                                     current-state)))
 
 (defn -main []
