@@ -10,9 +10,9 @@
 (def draw-card random-card-strategy)
 
 (defn game-step [current-state] (let [bountyDeck (:bountyDeck current-state)
-                                      first-player-deck (get-in current-state [:firstPlayer :deck])
-                                      second-player-deck (get-in current-state [:secondPlayer :deck])]
-                                  (if (= 0 (count bountyDeck))
+                                      first-player-deck (-> current-state :firstPlayer :deck)
+                                      second-player-deck (-> current-state :secondPlayer :deck)]
+                                  (if (empty? bountyDeck)
                                     current-state
                                     (let [drawn-card (draw-card bountyDeck)
                                           first-player-card (random-card-strategy first-player-deck)
