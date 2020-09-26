@@ -19,10 +19,9 @@
                                         secondPlayerCard (random-card-strategy secondPlayerDeck)
                                         newState {:bountyDeck (disj bountyDeck drawnCard)
                                                   :firstPlayer {:deck (disj firstPlayerDeck firstPlayerCard) :score firstPlayerScore}
-                                                  :secondPlayer {:deck (disj secondPlayerDeck secondPlayerCard) :score secondPlayerScore}}]
-                                    (if (> firstPlayerCard secondPlayerCard)
-                                      (gameStep (assoc-in newState [:firstPlayer :score] (inc firstPlayerScore)))
-                                      (gameStep (assoc-in newState [:secondPlayer :score] (inc secondPlayerScore))))))))
+                                                  :secondPlayer {:deck (disj secondPlayerDeck secondPlayerCard) :score secondPlayerScore}}
+                                        matchWinner (if (> firstPlayerCard secondPlayerCard) :firstPlayer :secondPlayer)]
+                                    (gameStep (update-in newState [matchWinner :score] inc))))))
 
 (defn -main
   "I don't do a whole lot ... yet."
