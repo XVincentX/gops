@@ -9,20 +9,20 @@
 (defn highest-card-strategy [deck] (apply max (seq deck)))
 
 (defn gameStep [currentState] (let [bountyDeck (:bountyDeck currentState)
-                                    firstPlayerDeck (get-in currentState [:firstPlayer :deck])
-                                    secondPlayerDeck (get-in currentState [:secondPlayer :deck])
-                                    firstPlayerScore (get-in currentState [:firstPlayer :score])
-                                    secondPlayerScore (get-in currentState [:secondPlayer :score])]
+                                    first-player-deck (get-in currentState [:firstPlayer :deck])
+                                    second-player-deck (get-in currentState [:secondPlayer :deck])
+                                    first-player-score (get-in currentState [:firstPlayer :score])
+                                    second-player-score (get-in currentState [:secondPlayer :score])]
                                 (if (= 0 (count bountyDeck))
                                   currentState
-                                  (let [drawnCard (rand-nth (seq bountyDeck))
-                                        firstPlayerCard (random-card-strategy firstPlayerDeck)
-                                        secondPlayerCard (highest-card-strategy secondPlayerDeck)
-                                        newState {:bountyDeck (disj bountyDeck drawnCard)
-                                                  :firstPlayer {:deck (disj firstPlayerDeck firstPlayerCard) :score firstPlayerScore}
-                                                  :secondPlayer {:deck (disj secondPlayerDeck secondPlayerCard) :score secondPlayerScore}}
-                                        matchWinner (if (> firstPlayerCard secondPlayerCard) :firstPlayer :secondPlayer)]
-                                    (gameStep (update-in newState [matchWinner :score] inc))))))
+                                  (let [drawn-card (rand-nth (seq bountyDeck))
+                                        first-player-card (random-card-strategy first-player-deck)
+                                        second-player-card (highest-card-strategy second-player-deck)
+                                        new-state {:bountyDeck (disj bountyDeck drawn-card)
+                                                   :firstPlayer {:deck (disj first-player-deck first-player-card) :score first-player-score}
+                                                   :secondPlayer {:deck (disj second-player-deck second-player-card) :score second-player-score}}
+                                        matchWinner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)]
+                                    (gameStep (update-in new-state [matchWinner :score] inc))))))
 
 (defn -main
   "I don't do a whole lot ... yet."
