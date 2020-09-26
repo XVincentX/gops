@@ -1,9 +1,9 @@
 (ns gops.core
   (:gen-class))
 
-(def initialState {:firstPlayer {:deck #{1 2 3 4 5 6 7 8 9 10 11} :score 0}
-                   :secondPlayer {:deck #{1 2 3 4 5 6 7 8 9 10 11} :score 0}
-                   :bountyDeck #{1 2 3 4 5 6 7 8 9 10 11}})
+(def initial-state {:firstPlayer {:deck #{1 2 3 4 5 6 7 8 9 10 11} :score 0}
+                    :secondPlayer {:deck #{1 2 3 4 5 6 7 8 9 10 11} :score 0}
+                    :bountyDeck #{1 2 3 4 5 6 7 8 9 10 11}})
 
 (defn random-card-strategy [deck] (rand-nth (seq deck)))
 (defn highest-card-strategy [deck] (apply max (seq deck)))
@@ -24,9 +24,7 @@
                                         matchWinner (if (> first-player-card second-player-card) :firstPlayer :secondPlayer)]
                                     (gameStep (update-in new-state [matchWinner :score] inc))))))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  []
-  (let [state (gameStep initialState)]
-    (println state)
-    (if (> (get-in state [:firstPlayer :score]) (get-in state [:secondPlayer :score])) (println "player 1 won") (println "player 2 won"))))
+(defn -main []
+  (let [final-state (gameStep initial-state)]
+    (println final-state)
+    (if (> (get-in final-state [:firstPlayer :score]) (get-in final-state [:secondPlayer :score])) (println "player 1 won") (println "player 2 won"))))
