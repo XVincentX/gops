@@ -11,9 +11,9 @@
 (def draw-card random-card-strategy)
 
 (defn game-step [current-state]
-  (let [bounty-deck (:bounty-deck current-state)
-        first-player-deck (-> current-state :first-player :deck)
-        second-player-deck (-> current-state :second-player :deck)]
+  (let [{bounty-deck :bounty-deck
+         {first-player-deck :deck} :first-player
+         {second-player-deck :deck} :second-player} current-state]
     (if (seq bounty-deck)
       (let [drawn-card (draw-card bounty-deck)
             first-player-card (random-card-strategy first-player-deck)
