@@ -24,8 +24,10 @@
 
 (defn -main []
   (loop [next-state (game-step initial-state)]
-    (if-not (seq (:bounty-deck next-state))
-      (if (> (-> next-state :first-player :score) (-> next-state :second-player :score))
-        (println "Player 1 won")
-        (println "Player 2 won"))
-      (recur (game-step next-state)))))
+    (let [first-player (:first-player next-state)
+          second-player (:second-player next-state)]
+      (if-not (seq (:bounty-deck next-state))
+        (if (> (first-player :score) (second-player :score))
+          (println "Player 1 won")
+          (println "Player 2 won"))
+        (recur (game-step next-state))))))
