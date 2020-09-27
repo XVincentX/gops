@@ -11,12 +11,10 @@
 (def draw-card random-card-strategy)
 
 (defn game-step [current-state]
-  (let [{bounty-deck :bounty-deck
-         {first-player-deck :deck} :first-player
-         {second-player-deck :deck} :second-player} current-state
+  (let [{:keys [bounty-deck first-player second-player]} current-state
         drawn-card (draw-card bounty-deck)
-        first-player-card (random-card-strategy first-player-deck)
-        second-player-card (highest-card-strategy second-player-deck)
+        first-player-card (random-card-strategy (:deck first-player))
+        second-player-card (highest-card-strategy (:deck second-player))
         match-winner (if (> first-player-card second-player-card) :first-player :second-player)]
     (-> current-state
         (update-in [match-winner :score] inc)
