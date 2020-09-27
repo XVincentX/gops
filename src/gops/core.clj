@@ -13,22 +13,21 @@
 (defn game-step [current-state]
   (let [{bounty-deck :bounty-deck
          {first-player-deck :deck} :first-player
-         {second-player-deck :deck} :second-player} current-state]
-    (if (seq bounty-deck)
-      (let [drawn-card (draw-card bounty-deck)
-            first-player-card (random-card-strategy first-player-deck)
-            second-player-card (highest-card-strategy second-player-deck)
-            match-winner (if (> first-player-card second-player-card) :first-player :second-player)]
-        (game-step (-> current-state
-                       (update-in [match-winner :score] inc)
-                       (update-in [:bounty-deck] disj drawn-card)
-                       (update-in [:first-player :deck] disj first-player-card)
-                       (update-in [:second-player :deck] disj second-player-card))))
-      current-state)))
+         {second-player-deck :deck} :second-player} current-state
+        drawn-card (draw-card bounty-deck)
+        first-player-card (random-card-strategy first-player-deck)
+        second-player-card (highest-card-strategy second-player-deck)
+        match-winner (if (> first-player-card second-player-card) :first-player :second-player)]
+    (-> current-state
+        (update-in [match-winner :score] inc)
+        (update-in [:bounty-deck] disj drawn-card)
+        (update-in [:first-player :deck] disj first-player-card)
+        (update-in [:second-player :deck] disj second-player-card))))
 
 (defn -main []
-  (let [final-state (game-step initial-state)]
-    (println final-state)
-    (if (> (-> final-state :first-player :score) (-> final-state :second-player :score))
-      (println "player 1 won")
-      (println "player 2 won"))))
+  (loop [next-state (game-step initial-state)]
+    (if-not (seq (:bounty-deck next-state))
+      (if (> (-> next-state :first-player :score) (-> next-state :second-player :score))
+        (println "Player 1 won")
+        (println "Player 2 won"))
+      (recur (game-step next-state)))))
